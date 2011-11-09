@@ -6,11 +6,11 @@ The goal of the richie_rich script is to notify the user once a month with an re
 
 == Directions
 
-1) Setup an account with {Vanguard}[https://www.vanguard.com/].  The Vanguard family of funds are famous for being rock solid with very little management overhead.
+1. Setup an account with {Vanguard}[https://www.vanguard.com/].  The Vanguard family of funds are famous for being rock solid with very little management overhead.
 
-2) Purchase a series of low cost mutual funds in a series of non-correlated markets.  Follow the fund recommendations outlined in the book, {The Gone Fishin' Portfolio}[http://www.amazon.com/Gone-Fishin-Portfolio-Wealthy-Agora/dp/0470598190/].
+2. Purchase a series of low cost mutual funds in a series of non-correlated markets.  Follow the fund recommendations outlined in the book, {The Gone Fishin' Portfolio}[http://www.amazon.com/Gone-Fishin-Portfolio-Wealthy-Agora/dp/0470598190/].
 
-	"Your asset allocation is your single biggest investment decision.  Studies show that over 90% of your portfolio's long-term return is due to this factor alone.", [Green A., The Gone Fishin' Portfolio, pg. 88]
+> "Your asset allocation is your single biggest investment decision.  Studies show that over 90% of your portfolio's long-term return is due to this factor alone.", [Green A., The Gone Fishin' Portfolio, pg. 88]
 
 * VTSMX (15%)
 * NAESX (15%)
@@ -23,9 +23,9 @@ The goal of the richie_rich script is to notify the user once a month with an re
 * VGSIX (5%)
 * VGPMX (5%)
 
-2) After purchasing my funds with the above allocation, in effort to reduce risk, utilize the "Systematic Tactical Asset Allocation" method as outlined in the book {The Ivy Portfolio}[http://www.amazon.com/Ivy-Portfolio-Invest-Endowments-Markets/dp/1118008855/] or in the paper {A Quantitative Approach to Tactical Asset Allocation}[http://trendfollowing.com/whitepaper/CMT-Simple.pdf]
+3. After purchasing my funds with the above allocation, in effort to reduce risk, utilize the "Systematic Tactical Asset Allocation" method as outlined in the book {The Ivy Portfolio}[http://www.amazon.com/Ivy-Portfolio-Invest-Endowments-Markets/dp/1118008855/] or in the paper {A Quantitative Approach to Tactical Asset Allocation}[http://trendfollowing.com/whitepaper/CMT-Simple.pdf]
 
-	"While timing model [Systematic Tactical Asset Allocation] returns are approximately the same as buy-and-hold for each asset class (although higher in all five), risk was reduced in every case across volatility and maximum", [Richardson, Eric W. - Faber, Mebane T., The Ivy Portfolio, pg. 141]
+> "While timing model [Systematic Tactical Asset Allocation] returns are approximately the same as buy-and-hold for each asset class (although higher in all five), risk was reduced in every case across volatility and maximum", [Richardson, Eric W. - Faber, Mebane T., The Ivy Portfolio, pg. 141]
 
 == The Code
 
