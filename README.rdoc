@@ -15,18 +15,18 @@ The goal of the richie_rich script is to notify the user once a month with an re
     portfolio's long-term return is due to this factor alone.", 
     [Green A., The Gone Fishin' Portfolio, pg. 88]
 
-* VTSMX (15%)
-* NAESX (15%)
-* VEIEX (10%)
-* VEURX (10%)
-* VPACX (10%)
-* VWEHX (10%)
-* VFSTX (10%)
-* VIPSX (10%)
-* VGSIX (5%)
-* VGPMX (5%)
+* (15%) {VTSMX,Vanguard Total Stock Market Index}[http://finance.yahoo.com/q/ta?s=VTSMX&t=1y&l=on&z=l&q=l&p=m200&a=&c=]
+* (15%) {NAESX,Vanguard Small Cap Index}[http://finance.yahoo.com/q/ta?s=NAESX&t=1y&l=on&z=l&q=l&p=m200&a=&c=] 
+* (10%) {VEIEX,Vanguard Emerging Markets Stock Index}[http://finance.yahoo.com/q/ta?s=VEIEX&t=1y&l=on&z=l&q=l&p=m200&a=&c=]
+* (10%) {VEURX,Vanguard European Stock Index}[http://finance.yahoo.com/q/ta?s=VEURX&t=1y&l=on&z=l&q=l&p=m200&a=&c=]
+* (10%) {VPACX,Vanguard Pacific Stock Index}[http://finance.yahoo.com/q/ta?s=VPACX&t=1y&l=on&z=l&q=l&p=m200&a=&c=]
+* (10%) {VWEHX,Vanguard High-Yield Corporate}[http://finance.yahoo.com/q/ta?s=VWEHX&t=1y&l=on&z=l&q=l&p=m200&a=&c=]
+* (10%) {VFSTX,Vanguard Short-Term Investment-Grade}[http://finance.yahoo.com/q/ta?s=VFSTX&t=1y&l=on&z=l&q=l&p=m200&a=&c=]
+* (10%) {VIPSX,Vanguard Inflation-Protected Securities}[http://finance.yahoo.com/q/ta?s=VIPSX&t=1y&l=on&z=l&q=l&p=m200&a=&c=]
+* (5%)  {VGSIX,Vanguard REIT Index}[http://finance.yahoo.com/q/ta?s=VGSIX&t=1y&l=on&z=l&q=l&p=m200&a=&c=]
+* (5%)  {VGPMX,Vanguard Precious Metals and Mining}[http://finance.yahoo.com/q/ta?s=VGPMX&t=1y&l=on&z=l&q=l&p=m200&a=&c=]
 
-3) After purchasing my funds with the above allocation, in effort to reduce risk, utilize the "Systematic Tactical Asset Allocation" method as outlined in the book {The Ivy Portfolio}[http://www.amazon.com/Ivy-Portfolio-Invest-Endowments-Markets/dp/1118008855/] or in the paper {A Quantitative Approach to Tactical Asset Allocation}[http://trendfollowing.com/whitepaper/CMT-Simple.pdf]
+3) After purchasing the listed Vanguard funds with the above allocations, in effort to reduce risk, utilize the "Systematic Tactical Asset Allocation" method as outlined in the book {The Ivy Portfolio}[http://www.amazon.com/Ivy-Portfolio-Invest-Endowments-Markets/dp/1118008855/] or in the paper {A Quantitative Approach to Tactical Asset Allocation}[http://trendfollowing.com/whitepaper/CMT-Simple.pdf]
 
     "While timing model [Systematic Tactical Asset Allocation] returns are approximately the same as buy-and-hold for each
     asset class (although higher in all five), risk was reduced in every case across volatility and maximum", 
@@ -35,7 +35,7 @@ The goal of the richie_rich script is to notify the user once a month with an re
 
 == The Code
 
-The program should be run on the first day of each month.
+The program should be run on the first day of each month.  You could use cron for this.
 
 Rebalancing should take place once a month. In non tax-exempt funds, adding to positions to bring the portfolio back into balance is desired since selling of positions can trigger short term capital gains.
 

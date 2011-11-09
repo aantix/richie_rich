@@ -1,11 +1,17 @@
 require 'net/smtp'
 
 class EmailReport
-  FROM = "fund-anaylsis@localhost"
+  def initialize(connect_options)
+    raise ArgumentError.new("Must provide SMTP authentication details. Check the config.rb to make sure they're specified.") if connect_options.empty?
+    
+    @connect_options = connect_options
+  end  
   
-  def send(results, to)
-    Net::SMTP.start('localhost') do |smtp|
-      smtp.send_message message(results, FROM, to), FROM, to
+  def deliver(results, to)
+    Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_PEER) if @connect_options[:tls]
+    
+    Net::SMTP.start(connect_options) do |smtp|
+      smtp.send_message message(results, @connect_options[:from], to), @connect_options[:from], to
     end    
     
   end

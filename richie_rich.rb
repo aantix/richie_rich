@@ -1,10 +1,12 @@
 #!/usr/local/ruby-current/bin/ruby
 require 'rubygems'
+require "bundler/setup" 
+
+require './config.rb'
 require "./lib/quotes_adapter"
 require "./lib/moving_average"
 require "./lib/fund_analysis"
-
-SYMBOLS = ['VTSMX','NAESX','VEIEX','VEURX','VPACX','VWEHX','VFSTX','VIPSX','VSIX','VGPMX']
+require './lib/email_report'
 
 results = {}
 SYMBOLS.each do |s|
@@ -13,4 +15,4 @@ SYMBOLS.each do |s|
   results[s]         = buy_it
 end
 
-EmailReport.send(results, 'jim.jones1@gmail.com')
+EmailReport.email(results, 'jim.jones1@gmail.com')

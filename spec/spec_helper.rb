@@ -37,6 +37,7 @@ end
 Spork.each_run do
   # This code will be run each time you run your specs.
   Dir["#{File.dirname(__FILE__)}/../lib/**/*.rb"].each {|f| require f}
+  require "#{File.dirname(__FILE__)}/../config.rb"
 
 end
 
