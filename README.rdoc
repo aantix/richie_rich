@@ -1,6 +1,6 @@
 == Richie Rich
 
-GOAL: To follow a simple investing model that requires very little babysitting and re-balancing, and with a better than market risk profile.
+GOAL: Follow a simple investing model that requires very little babysitting and re-balancing, and with a better than market risk profile.
 
 The goal of the richie_rich script is to notify the user once a month with an report for each of the below funds outlining whether they should be in a buy/hold or sell/cash position.
 
@@ -12,16 +12,16 @@ The goal of the richie_rich script is to notify the user once a month with an re
 
 	"Your asset allocation is your single biggest investment decision.  Studies show that over 90% of your portfolio's long-term return is due to this factor alone.", [Green A., The Gone Fishin' Portfolio, pg. 88]
 
-VTSMX (15%)
-NAESX (15%)
-VEIEX (10%)
-VEURX (10%)
-VPACX (10%)
-VWEHX (10%)
-VFSTX (10%)
-VIPSX (10%)
-VSIX  (5%)
-VGPMX (5%)
+* VTSMX (15%)
+* NAESX (15%)
+* VEIEX (10%)
+* VEURX (10%)
+* VPACX (10%)
+* VWEHX (10%)
+* VFSTX (10%)
+* VIPSX (10%)
+* VGSIX (5%)
+* VGPMX (5%)
 
 2) After purchasing my funds with the above allocation, in effort to reduce risk, utilize the "Systematic Tactical Asset Allocation" method as outlined in the book {The Ivy Portfolio}[http://www.amazon.com/Ivy-Portfolio-Invest-Endowments-Markets/dp/1118008855/] or in the paper {A Quantitative Approach to Tactical Asset Allocation}[http://trendfollowing.com/whitepaper/CMT-Simple.pdf]
 
