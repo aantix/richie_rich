@@ -2,3 +2,5 @@
 .rvmrc
 *~
 .bundle
+Gemfile.lock
+config.rb
