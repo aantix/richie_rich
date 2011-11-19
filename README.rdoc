@@ -37,6 +37,10 @@ The goal of the richie_rich script is to notify the user once a month with an re
 
 The program should be run on the first day of each month.  You could use cron for this.
 
+	# Run this at midnight for the first of the month.
+	# Make sure this is a system that has a constant uptime; wouldn't want to miss running this report.
+	0 0 1 * * ruby /Users/jjones/Projects/richie_rich/richie_rich.rb > /dev/null
+
 Rebalancing should take place once a month. In non tax-exempt funds, adding to positions to bring the portfolio back into balance is desired since selling of positions can trigger short term capital gains.
 
 == License
