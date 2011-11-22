@@ -12,7 +12,7 @@ Spork.prefork do
   # if you change any configuration or code from libraries loaded here, you'll
   # need to restart spork for it take effect.
 
-  Factory.find_definitions
+  FactoryGirl.find_definitions
 
   RSpec.configure do |config|
     # == Mock Framework

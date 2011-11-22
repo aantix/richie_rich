@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'net/smtp'
 
 describe EmailReport do
   before(:all) do
@@ -7,8 +8,12 @@ describe EmailReport do
                      :password => "password",
                      :from     => "fund-anaylsis@localhost",
                      :tls      => false}    
+  end
+  
+  before(:each) do
+    Net::SMTP.any_instance.stub(:start)
 
-   @email = EmailReport.new(@smtp_options)
+    @email = EmailReport.new(@smtp_options)
   end
   
   describe "#message" do
@@ -24,7 +29,7 @@ describe EmailReport do
     
     it "should return a message with the individual stock symbols listed" do
       SYMBOLS.each do |s|
-        @email.send(:message, @results, @smtp_options[:from], 'jim.jones1@gmail.com').should =~ /#{s}/
+        @email.send(:message, @results).should =~ /#{s}/
       end
       
     end

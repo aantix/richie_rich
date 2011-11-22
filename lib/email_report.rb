@@ -8,7 +8,7 @@ class EmailReport
     smtp_conn = Net::SMTP.new(connect_options[:address], connect_options[:port])
     smtp_conn.enable_starttls if connect_options[:tls]
     smtp_conn.start(connect_options[:address], connect_options[:username], connect_options[:password], :plain)
-
+    
     Mail.defaults do
       delivery_method :smtp_connection, { :connection => smtp_conn }
     end
