@@ -5,7 +5,9 @@ require "bundler/setup"
 require 'factory_girl'
 require 'rspec'
 require 'spork'
-require 'growl'
+require 'growl' if RUBY_PLATFORM.downcase.include?("darwin")
+
+
   
 Spork.prefork do
   # Loading more in this block will cause your tests to run faster. However,
