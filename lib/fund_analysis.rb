@@ -1,10 +1,10 @@
 class FundAnalysis
   def self.agreggate_results_for(symbols)
     results = {}
-    symbols.each do |s|
+    symbols.each do |s,allocation|
       historical_pricing = QuotesAdapter.retrieve(s)
       buy_it             = FundAnalysis.is_a_buy?(historical_pricing)
-      results[s]         = buy_it
+      results[s]         = [buy_it, allocation]
     end
     results
   end

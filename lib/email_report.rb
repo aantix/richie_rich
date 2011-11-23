@@ -45,9 +45,13 @@ private
   def message(results)
     message =  "<table cellpadding=\"2\" cellspacing=\"0\" border=1 width=\"445px\">"
     message << "<tr><td colspan=3>&nbsp;</td></tr>"
-    results.each do |s,r|
+    results.each do |s,v|
+      r,allocation = v
+      perc         = (allocation*100).round(1)
+      
       message << "<tr>"
       message << "  <td width=120>&nbsp;Symbol:&nbsp;&nbsp;<b>#{s}</b></td>"
+      message << "  <td width=120>&nbsp;Allocation:&nbsp;&nbsp;<b>#{(perc)}%</b></td>"
       message << "  <td width=180>&nbsp;Action:&nbsp;&nbsp;<b>#{result_label(r)}</b></td>"
       message << "</tr>"      
       message << "<tr><td colspan=3>"

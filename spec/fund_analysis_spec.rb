@@ -19,7 +19,7 @@ describe FundAnalysis do
     end
     
     it "should return a hash with the symbol and a buy signal" do
-      FundAnalysis.agreggate_results_for(['VTSMX']).should == {'VTSMX' => true}
+      FundAnalysis.agreggate_results_for({'VTSMX' => 0.1}).should == {'VTSMX' => [true, 0.1]}
     end
     
   end

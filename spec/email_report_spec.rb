@@ -20,18 +20,16 @@ describe EmailReport do
     before(:all) do
       @results = {}
       result   = true
-      SYMBOLS.each do |s|
-        @results[s] = result
+      SYMBOLS.each do |s,allocation|
+        @results[s] = [result, allocation]
         result      = !result 
       end
       
     end
     
     it "should return a message with the individual stock symbols listed" do
-      SYMBOLS.each do |s|
-        @email.send(:message, @results).should =~ /#{s}/
-      end
-      
+      message = @email.send(:message, @results)
+      SYMBOLS.each {|s,allocation| message.should =~ /#{s}/}
     end
   end
 end
