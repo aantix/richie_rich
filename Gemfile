@@ -6,7 +6,7 @@ gem 'nas-yahoo_stock'
 # are available without having to explicitly switch the environment to 'test'
 group :test, :development do
 	gem 'factory_girl', '>= 1.3.2'
-	gem 'rspec', '> 2.5.0', :group => [:test, :development]
+	gem 'rspec', '> 2.5.0'
 	gem "guard-rspec"
 	gem "spork", "> 0.9.0.rc"
 	gem "guard-spork"
