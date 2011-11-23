@@ -1,15 +1,18 @@
+== Disclaimer
+This is my approach to investing outlined for my personal purposes only. It's provided for informational purposes only. This isn't mean to be investment advice.  Please song long disclaimer below for further legalities.
+
 == Richie Rich
 
-GOAL: Follow a simple investing model that requires very little babysitting and re-balancing, and with a better than market risk profile.
+MY GOAL: Follow a simple investing model that requires very little babysitting and re-balancing, and with a better than market risk profile.
 
-The goal of the richie_rich script is to notify the user once a month with an report for each of the below funds outlining whether they should be in a buy/hold or sell/cash position.
+The richie_rich.rb script notifies me once a month with an email report outlining whether each of the funds below should be in a buy/hold or sell/cash position.
 
 
-== Directions
+== Investment Setup
 
-1) Setup an account with {Vanguard}[https://www.vanguard.com/].  The Vanguard family of funds are famous for being rock solid with very little management overhead.
+1) I setup an account with {Vanguard}[https://www.vanguard.com/].  The Vanguard family of funds are famous for being rock solid with very little management overhead.
 
-2) Purchase a series of low cost mutual funds in a series of non-correlated markets.  Follow the fund recommendations outlined in the book, {The Gone Fishin' Portfolio}[http://www.amazon.com/Gone-Fishin-Portfolio-Wealthy-Agora/dp/0470598190/].
+2) I purchased a series of low cost mutual funds in a series of non-correlated markets.  I followed the fund recommendations outlined in the book, {The Gone Fishin' Portfolio}[http://www.amazon.com/Gone-Fishin-Portfolio-Wealthy-Agora/dp/0470598190/].
 
     "Your asset allocation is your single biggest investment decision.  Studies show that over 90% of your 
     portfolio's long-term return is due to this factor alone.", 
@@ -26,7 +29,7 @@ The goal of the richie_rich script is to notify the user once a month with an re
 * (5%)  {VGSIX,Vanguard REIT Index}[http://finance.yahoo.com/q/ta?s=VGSIX&t=1y&l=on&z=l&q=l&p=m200&a=&c=]
 * (5%)  {VGPMX,Vanguard Precious Metals and Mining}[http://finance.yahoo.com/q/ta?s=VGPMX&t=1y&l=on&z=l&q=l&p=m200&a=&c=]
 
-3) After purchasing the listed Vanguard funds with the above allocations, in effort to reduce risk, utilize the "Systematic Tactical Asset Allocation" method as outlined in the book {The Ivy Portfolio}[http://www.amazon.com/Ivy-Portfolio-Invest-Endowments-Markets/dp/1118008855/] or in the paper {A Quantitative Approach to Tactical Asset Allocation}[http://trendfollowing.com/whitepaper/CMT-Simple.pdf]
+3) After purchasing the listed Vanguard funds with the above allocations, in effort to reduce risk, I utilize the "Systematic Tactical Asset Allocation" method as outlined in the book {The Ivy Portfolio}[http://www.amazon.com/Ivy-Portfolio-Invest-Endowments-Markets/dp/1118008855/] or in the paper {A Quantitative Approach to Tactical Asset Allocation}[http://trendfollowing.com/whitepaper/CMT-Simple.pdf]
 
     "While timing model [Systematic Tactical Asset Allocation] returns are approximately the same as buy-and-hold for each
     asset class (although higher in all five), risk was reduced in every case across volatility and maximum", 
@@ -35,13 +38,15 @@ The goal of the richie_rich script is to notify the user once a month with an re
 
 == The Code
 
-The program should be run on the first day of each month.  You could use cron for this.
+I edited the config.rb script to contain my desired SMTP settings. 
+
+The richie_rich.rb script should run on the first day of each month.  I utilize cron to automate this :
 
     # Run this at midnight for the first of the month.
     # Make sure this is a system that has a constant uptime; wouldn't want to miss running this report.
-    0 0 1 * * ruby /src/richie_rich/richie_rich.rb > /dev/null
+    0 0 1 * * cd /src/richie_rich && ruby /src/richie_rich/richie_rich.rb > /dev/null
 
-Rebalancing should take place once a month. In non tax-exempt funds, adding to positions to bring the portfolio back into balance is desired since selling of positions can trigger short term capital gains.
+My rebalancing needs to take place once a month (in non tax-exempt funds, adding to positions to bring the portfolio back into balance is desired since selling of positions can trigger short term capital gains).
 
 == License
 
