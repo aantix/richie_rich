@@ -1,5 +1,6 @@
 == Disclaimer
-This is my approach to investing outlined for my personal purposes only. It's provided for informational purposes only. This isn't mean to be investment advice.  Please see the long disclaimer below for further legalities.
+This is my approach to investing outlined. It's provided for informational purposes only. This isn't investment advice. I am not an investment advisor.  You use this information _at your own risk_. By using this code, you agree the responsibilities listed below in the "License & Disclaimer" section.
+
 
 == Richie Rich
 
@@ -61,7 +62,7 @@ The richie_rich.rb script should run on the first day of each month.  I utilize 
 
 My rebalancing needs to take place once a month (in non tax-exempt funds, adding to positions to bring the portfolio back into balance is desired since selling of positions can trigger short term capital gains).
 
-== License
+== License & Disclaimer
 
 Copyright (c) 2011 Jim Jones
 
