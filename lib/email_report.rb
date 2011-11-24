@@ -16,11 +16,11 @@ class EmailReport
     @connect_options = connect_options
   end
 
-  def deliver(results, to)
-    puts "Sending report to #{to}..."
+  def deliver(results)
+    puts "Sending report to #{@connect_options[:to]}..."
     
     mail         = Mail.new
-    mail.to      = to
+    mail.to      = @connect_options[:to]
     mail.from    = @connect_options[:from]
     mail.subject = @connect_options[:subject]
     msg          = message(results)

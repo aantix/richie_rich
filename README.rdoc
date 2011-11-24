@@ -8,11 +8,16 @@ MY GOAL: Follow a simple investing model that requires very little babysitting a
 The richie_rich.rb script notifies me once a month with an email report outlining whether each of the funds below should be in a buy/hold or sell/cash position.
 
 
+== Sample Report Output
+
+http://i.imgur.com/wPvaJ.png
+
+
 == Investment Setup
 
 1) I setup an account with {Vanguard}[https://www.vanguard.com/].  The Vanguard family of funds are famous for being rock solid with very little management overhead.
 
-2) I purchased a series of low cost mutual funds in a series of non-correlated markets.  I followed the fund recommendations outlined in the book, {The Gone Fishin' Portfolio}[http://www.amazon.com/Gone-Fishin-Portfolio-Wealthy-Agora/dp/0470598190/].
+2) I purchased a series of Vanguard mutual funds in a series of non-correlated markets.  I followed the fund recommendations outlined in the book, {The Gone Fishin' Portfolio}[http://www.amazon.com/Gone-Fishin-Portfolio-Wealthy-Agora/dp/0470598190/].
 
     "Your asset allocation is your single biggest investment decision.  Studies show that over 90% of your 
     portfolio's long-term return is due to this factor alone.", 
@@ -29,16 +34,24 @@ The richie_rich.rb script notifies me once a month with an email report outlinin
 * (5%)  {VGSIX,Vanguard REIT Index}[http://finance.yahoo.com/q/ta?s=VGSIX&t=1y&l=on&z=l&q=l&p=m200&a=&c=]
 * (5%)  {VGPMX,Vanguard Precious Metals and Mining}[http://finance.yahoo.com/q/ta?s=VGPMX&t=1y&l=on&z=l&q=l&p=m200&a=&c=]
 
-3) After purchasing the listed Vanguard funds with the above allocations, in effort to reduce risk, I utilize the "Systematic Tactical Asset Allocation" method as outlined in the book {The Ivy Portfolio}[http://www.amazon.com/Ivy-Portfolio-Invest-Endowments-Markets/dp/1118008855/] or in the paper {A Quantitative Approach to Tactical Asset Allocation}[http://trendfollowing.com/whitepaper/CMT-Simple.pdf]
+    http://i.imgur.com/ae2fS.png
+
+    http://i.imgur.com/9YPI1.png
+
+
+3) After purchasing the listed funds with the above allocations, in effort to reduce risk, I utilize the "Systematic Tactical Asset Allocation" method as outlined in the book {The Ivy Portfolio}[http://www.amazon.com/Ivy-Portfolio-Invest-Endowments-Markets/dp/1118008855/] or in the paper {A Quantitative Approach to Tactical Asset Allocation}[http://trendfollowing.com/whitepaper/CMT-Simple.pdf].  
+
+This is essentially a 200 day moving average (MA) crossover; for each of the funds above, if it's closing price is above it's 200 day moving average (using the closing price) at the time our report runs (once a month), it's a buy signal (or hold if you're already in a purchased position).  If it's below the 200 day MA at the time the report runs (once a month), it's a sell signal (or cash position if you've already sold prior).
+
+    http://i.imgur.com/huZBg.png
 
     "While timing model [Systematic Tactical Asset Allocation] returns are approximately the same as buy-and-hold for each
     asset class (although higher in all five), risk was reduced in every case across volatility and maximum", 
     [Richardson, Eric W. - Faber, Mebane T., The Ivy Portfolio, pg. 141]
 
-
 == The Code
 
-I edited the config.rb script to contain my desired SMTP settings. 
+I edited the config.rb script to contain my desired SMTP settings. I changed the 
 
 The richie_rich.rb script should run on the first day of each month.  I utilize cron to automate this :
 

@@ -15,5 +15,6 @@ SMTP_OPTIONS  = {:address    => "smtp.gmail.com",
                 :password    => "password",
                 :port        => 587,
                 :from        => "your.name@gmail.com",
+                :to          => "your.name@gmail.com",
                 :subject     => "Fund Rebalance Report",
                 :tls         => true}
