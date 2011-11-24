@@ -52,7 +52,7 @@ http://i.imgur.com/huZBg.png
 
 == The Code
 
-I edited the config.rb script to contain my desired SMTP settings. I changed the 
+I edited the config.rb script to contain my desired SMTP settings.  
 
 The richie_rich.rb script should run on the first day of each month.  I utilize cron to automate this :
 
