@@ -3,7 +3,8 @@ require 'mail'
 
 class EmailReport
   def initialize(connect_options)
-    raise ArgumentError.new("Must provide SMTP authentication details. Check the config.rb to make sure they're specified.") if connect_options.empty?
+    raise ArgumentError.new("\n\nMust provide SMTP authentication details. Check the config.rb to make sure they're specified.\n\n") if connect_options.empty?
+    raise ArgumentError.new("\n\nInvalid recipient email address.  Be sure to specify the recipient's email address (SMTP_OPTIONS[:to]) in the config.rb file.\n\n") if connect_options[:to] == "your.name@gmail.com"
     
     smtp_conn = Net::SMTP.new(connect_options[:address], connect_options[:port])
     smtp_conn.enable_starttls if connect_options[:tls]
