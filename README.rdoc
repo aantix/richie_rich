@@ -34,16 +34,16 @@ http://i.imgur.com/wPvaJ.png
 * (5%)  {VGSIX,Vanguard REIT Index}[http://finance.yahoo.com/q/ta?s=VGSIX&t=1y&l=on&z=l&q=l&p=m200&a=&c=]
 * (5%)  {VGPMX,Vanguard Precious Metals and Mining}[http://finance.yahoo.com/q/ta?s=VGPMX&t=1y&l=on&z=l&q=l&p=m200&a=&c=]
 
-    http://i.imgur.com/ae2fS.png
+http://i.imgur.com/ae2fS.png
 
-    http://i.imgur.com/9YPI1.png
+http://i.imgur.com/9YPI1.png
 
 
 3) After purchasing the listed funds with the above allocations, in effort to reduce risk, I utilize the "Systematic Tactical Asset Allocation" method as outlined in the book {The Ivy Portfolio}[http://www.amazon.com/Ivy-Portfolio-Invest-Endowments-Markets/dp/1118008855/] or in the paper {A Quantitative Approach to Tactical Asset Allocation}[http://trendfollowing.com/whitepaper/CMT-Simple.pdf].  
 
 This is essentially a 200 day moving average (MA) crossover; for each of the funds above, if it's closing price is above it's 200 day moving average (using the closing price) at the time our report runs (once a month), it's a buy signal (or hold if you're already in a purchased position).  If it's below the 200 day MA at the time the report runs (once a month), it's a sell signal (or cash position if you've already sold prior).
 
-    http://i.imgur.com/huZBg.png
+http://i.imgur.com/huZBg.png
 
     "While timing model [Systematic Tactical Asset Allocation] returns are approximately the same as buy-and-hold for each
     asset class (although higher in all five), risk was reduced in every case across volatility and maximum", 
