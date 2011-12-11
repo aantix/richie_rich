@@ -16,7 +16,7 @@ describe EmailReport do
     @email = EmailReport.new(@smtp_options)
   end
   
-  describe "#message" do
+  describe ".message" do
     before(:all) do
       @results = {}
       result   = true
@@ -32,4 +32,5 @@ describe EmailReport do
       SYMBOLS.each {|s,allocation| message.should =~ /#{s}/}
     end
   end
+
 end

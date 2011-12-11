@@ -1,3 +1,5 @@
+https://secure.travis-ci.org/aantix/richie_rich.png
+
 == Disclaimer
 This is my approach to investing outlined. It's provided for informational purposes only. This isn't investment advice. I am not an investment advisor.  You use this information _at your own risk_. By using this code, you agree the responsibilities listed below in the "License & Disclaimer" section.
 

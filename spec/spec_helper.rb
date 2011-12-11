@@ -1,12 +1,16 @@
 require 'rubygems'
+
+require 'simplecov'
+SimpleCov.start
+
 require "bundler/setup" 
 
 # require File.expand_path("../../config/environment", __FILE__)
 require 'factory_girl'
 require 'rspec'
+require 'mocha'
 require 'spork'
 require 'growl' if RUBY_PLATFORM.downcase.include?("darwin")
-
 
   
 Spork.prefork do
